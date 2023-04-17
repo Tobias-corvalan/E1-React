@@ -49,7 +49,7 @@ export const Button = styled.button`
 `;
 
 
-function TodoForm(props){
+function ToDoForm(props){
     const {addTodo} = props;
     const [value, setValue] = useState("");
 
@@ -76,4 +76,4 @@ function TodoForm(props){
 
 }
 
-export default TodoForm;
+export default ToDoForm;

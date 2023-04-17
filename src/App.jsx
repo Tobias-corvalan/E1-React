@@ -1,6 +1,6 @@
 import {useState} from 'react';
-import TodoForm from './components/ToDoForm/ToDoForm';
-import TodoList from './components/ToDoList/ToDoList';
+import ToDoForm from './components/ToDoForm/ToDoForm';
+import TodoList from './components/TodoList/TodoList';
 import ContainerForm from './components/ContainerForm/ContainerForm';
 
 
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <ContainerForm>
-      <TodoForm addTodo={addTodo} />
+      <ToDoForm addTodo={addTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} deleteTodoAll={deleteTodoAll} />
       {
         console.log(JSON.parse(localStorage.getItem('todos')))
